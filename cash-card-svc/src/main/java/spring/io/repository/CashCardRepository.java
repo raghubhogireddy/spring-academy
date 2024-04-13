@@ -1,4 +1,7 @@
 package spring.io.repository;
 
-public class CashCardRepository {
+import org.springframework.data.repository.CrudRepository;
+import spring.io.model.CashCard;
+
+public interface CashCardRepository extends CrudRepository<CashCard, Long> {
 }

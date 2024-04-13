@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "96130371-845e-4e8f-8af8-3c55f8894a1e",
+		"name": "cash-card-svc",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12345591"
+	},
+	"item": [
+		{
+			"name": "find Card",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/cashcards/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cashcards",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create Card",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"amount\" : 321.56\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/cashcards",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cashcards"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "find All Cards",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
